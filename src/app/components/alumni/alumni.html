@@ -1,18 +1,33 @@
 <section class="alumni-section">
 
-  <h2>Our Proud Alumni</h2>
+  <div class="section-title">
+
+    <h2>Our Proud Alumni</h2>
+
+    <p>
+      Meet our successful alumni who are excelling in various industries
+      and making our institution proud.
+    </p>
+
+  </div>
 
   <div class="alumni-grid">
 
     <div class="alumni-card" *ngFor="let alumni of alumniList">
 
-      <img [src]="alumni.image" alt="">
+      <div class="image-box">
+        <img [src]="alumni.image" alt="">
+      </div>
 
-      <h3>{{ alumni.name }}</h3>
+      <div class="card-content">
 
-      <p class="role">{{ alumni.role }}</p>
+        <h3>{{ alumni.name }}</h3>
 
-      <p class="company">{{ alumni.company }}</p>
+        <p class="role">{{ alumni.role }}</p>
+
+        <p class="company">{{ alumni.company }}</p>
+
+      </div>
 
     </div>
 
