@@ -1,0 +1,21 @@
+<section class="alumni-section">
+
+  <h2>Our Proud Alumni</h2>
+
+  <div class="alumni-grid">
+
+    <div class="alumni-card" *ngFor="let alumni of alumniList">
+
+      <img [src]="alumni.image" alt="">
+
+      <h3>{{ alumni.name }}</h3>
+
+      <p class="role">{{ alumni.role }}</p>
+
+      <p class="company">{{ alumni.company }}</p>
+
+    </div>
+
+  </div>
+
+</section>

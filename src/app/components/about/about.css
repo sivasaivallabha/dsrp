@@ -1,0 +1,156 @@
+.about-section{
+  padding:70px 20px;
+  background:#eef2f7;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+  background:white;
+  padding:50px;
+  border-radius:20px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-container h2{
+  text-align:center;
+  font-size:42px;
+  color:#0B2447;
+  margin-bottom:30px;
+}
+
+.about-container p{
+  font-size:20px;
+  line-height:1.9;
+  color:#444;
+  margin-bottom:25px;
+  text-align:justify;
+}
+
+.stats-section{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:50px;
+}
+
+.stat-box{
+  background:#0B2447;
+  color:white;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.stat-box:hover{
+  transform:translateY(-8px);
+}
+
+.stat-box h3{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.stat-box p{
+  margin:0;
+  color:white;
+  font-size:18px;
+}
+
+
+/* ========================= */
+/* TABLET RESPONSIVE */
+/* ========================= */
+
+@media(max-width:992px){
+
+  .about-container{
+    padding:40px;
+  }
+
+  .about-container h2{
+    font-size:36px;
+  }
+
+  .about-container p{
+    font-size:18px;
+  }
+
+  .stats-section{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+
+}
+
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+  .about-section{
+    padding:50px 15px;
+  }
+
+  .about-container{
+    padding:30px 20px;
+    border-radius:15px;
+  }
+
+  .about-container h2{
+    font-size:30px;
+    margin-bottom:20px;
+  }
+
+  .about-container p{
+    font-size:16px;
+    line-height:1.8;
+    text-align:left;
+  }
+
+  .stats-section{
+    grid-template-columns:1fr;
+    margin-top:35px;
+  }
+
+  .stat-box{
+    padding:25px 20px;
+  }
+
+  .stat-box h3{
+    font-size:30px;
+  }
+
+  .stat-box p{
+    font-size:16px;
+  }
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media(max-width:480px){
+
+  .about-container h2{
+    font-size:26px;
+  }
+
+  .about-container p{
+    font-size:15px;
+  }
+
+  .stat-box h3{
+    font-size:26px;
+  }
+
+  .stat-box p{
+    font-size:15px;
+  }
+
+}
