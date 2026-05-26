@@ -14,9 +14,9 @@ export class Alumni {
 
     {
       name: 'Member 1',
-      role: 'Software Engineer',
-      company: 'TCS',
-      image: 'assets/alumni/alumni1.jpg'
+      role: 'Technical Architect',
+      company: 'HCL Technologies',
+      image: 'assets/alumni/alumni1.jpeg'
     },
 
     {
