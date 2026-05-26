@@ -13,7 +13,9 @@
 
   <div class="alumni-grid">
 
-    <div class="alumni-card" *ngFor="let alumni of alumniList">
+    <div
+      class="alumni-card"
+      *ngFor="let alumni of visibleAlumni">
 
       <div class="image-box">
         <img [src]="alumni.image" alt="">
@@ -30,6 +32,22 @@
       </div>
 
     </div>
+
+  </div>
+
+  <!-- SEE MORE BUTTON -->
+
+  <div
+    class="btn-wrapper"
+    *ngIf="visibleCount < alumniList.length">
+
+    <button
+      class="see-more-btn"
+      (click)="showMore()">
+
+      See More
+
+    </button>
 
   </div>
 

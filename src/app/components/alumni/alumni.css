@@ -100,6 +100,33 @@
 }
 
 /* ========================= */
+/* SEE MORE BUTTON */
+/* ========================= */
+
+.btn-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+}
+
+.see-more-btn{
+  padding:14px 35px;
+  border:none;
+  border-radius:50px;
+  background:#0B2447;
+  color:white;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.see-more-btn:hover{
+  background:#19376D;
+  transform:translateY(-3px);
+}
+
+/* ========================= */
 /* TABLET RESPONSIVE */
 /* ========================= */
 
@@ -167,6 +194,17 @@
     font-size:15px;
   }
 
+  .btn-wrapper{
+    margin-top:35px;
+  }
+
+  .see-more-btn{
+    width:100%;
+    max-width:250px;
+    font-size:16px;
+    padding:13px 25px;
+  }
+
 }
 
 /* ========================= */
@@ -193,6 +231,11 @@
 
   .card-content h3{
     font-size:20px;
+  }
+
+  .see-more-btn{
+    font-size:15px;
+    padding:12px 20px;
   }
 
 }

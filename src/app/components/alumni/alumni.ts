@@ -119,4 +119,14 @@ export class Alumni {
 
   ];
 
+  visibleCount = 4;
+
+  get visibleAlumni() {
+    return this.alumniList.slice(0, this.visibleCount);
+  }
+
+  showMore() {
+    this.visibleCount += 4;
+  }
+
 }
