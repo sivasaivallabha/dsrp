@@ -70,7 +70,7 @@ export class Alumni {
 
     {
       name: 'Dr. T. Jagannadha Swamy',
-      role: 'Dean, Alumni Affairs & Professor of ECEr',
+      role: 'Dean, Alumni Affairs & Professor of ECE',
       company: 'GRIET, Hyderabad',
       image: 'assets/alumni/alumni9.jpeg'
     },
