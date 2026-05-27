@@ -9,24 +9,137 @@
     <p>Excellence in Technical Education</p>
   </div>
 
-  <nav class="nav-links">
+  <!-- HAMBURGER -->
 
-    <a href="#">Home</a>
+<div class="hamburger" (click)="toggleMobileMenu()">
+  ☰
+</div>
 
-    <a href="#">About</a>
+<!-- NAVBAR -->
 
-    <a href="#">Departments</a>
+<nav class="nav-links" [class.mobile-open]="mobileMenuOpen">
 
-    <a href="#">Admissions</a>
+  <a routerLink="/">Home</a>
 
-    <a href="#">Placements</a>
+  <a routerLink="/about">About</a>
 
-    <a href="#">Alumni</a>
+  <a (click)="openDepartments()">Departments</a>
 
-    <a href="#">Gallery</a>
+  <a routerLink="/admissions">Admissions</a>
 
-    <a href="#">Contact</a>
+  <a (click)="openPlacements()">Placements</a>
 
-  </nav>
+  <a routerLink="/alumni">Alumni</a>
+
+  <a routerLink="/gallery">Gallery</a>
+
+  <a routerLink="/footer">Contact</a>
+
+</nav>
 
 </header>
+
+<!-- ========================= -->
+<!-- DEPARTMENTS MODAL -->
+<!-- ========================= -->
+
+<div class="modal-overlay" *ngIf="showDepartments">
+
+  <div class="modal-box">
+
+    <span class="close-btn" (click)="closeDepartments()">×</span>
+
+    <h2>Our Departments</h2>
+
+    <div class="department-grid">
+
+      <div class="department-card">
+        <h3>Computer Engineering</h3>
+        <p>Programming, AI, Web Development & Modern Technologies.</p>
+      </div>
+
+      <div class="department-card">
+        <h3>Mechanical Engineering</h3>
+        <p>Advanced manufacturing, machines & industrial training.</p>
+      </div>
+
+      <div class="department-card">
+        <h3>Civil Engineering</h3>
+        <p>Construction, structural design & surveying labs.</p>
+      </div>
+
+      <div class="department-card">
+        <h3>Electrical Engineering</h3>
+        <p>Power systems, circuits & electrical machines.</p>
+      </div>
+
+      <div class="department-card">
+        <h3>ECE</h3>
+        <p>Electronics, communication systems & embedded technology.</p>
+      </div>
+
+      <div class="department-card">
+        <h3>AI & ML</h3>
+        <p>Artificial Intelligence, Machine Learning & Data Science.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PLACEMENTS MODAL -->
+<!-- ========================= -->
+
+<div class="modal-overlay" *ngIf="showPlacements">
+
+  <div class="modal-box">
+
+    <span class="close-btn" (click)="closePlacements()">×</span>
+
+    <h2>Top Recruiters</h2>
+
+    <div class="company-grid">
+
+      <div class="company-card">TCS</div>
+
+      <div class="company-card">Infosys</div>
+
+      <div class="company-card">Wipro</div>
+
+      <div class="company-card">Cognizant</div>
+
+      <div class="company-card">Capgemini</div>
+
+      <div class="company-card">HCL</div>
+
+      <div class="company-card">Tech Mahindra</div>
+
+      <div class="company-card">Accenture</div>
+
+    </div>
+
+    <div class="placement-stats">
+
+      <div class="stat-box">
+        <h3>500+</h3>
+        <p>Students Placed</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>120+</h3>
+        <p>Companies</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>95%</h3>
+        <p>Placement Rate</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
