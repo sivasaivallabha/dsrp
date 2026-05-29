@@ -109,6 +109,18 @@ export class Alumni {
       company: 'Film Industry',
       image: 'assets/alumni/alumni14.jpeg'
     },
+    {
+      name: 'Vipparti Nand  ',
+      role: 'Executive Engineer (Electronics)',
+      company: 'ONGC, CHENNAI',
+      image: 'assets/alumni/alumni15.jpeg'
+    },
+    {
+      name: 'VG prakash ',
+      role: 'Analyzer Supervisor',
+      company: 'MAA Refinery(KNPC), Finesco, Kuwait',
+      image: 'assets/alumni/alumni16.jpeg'
+    },
 
   ];
 
