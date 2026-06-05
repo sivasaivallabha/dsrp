@@ -45,6 +45,79 @@ export class Gallery {
     {
       image: 'assets/gallery/photo8.jpeg'
     },
+    {
+      image: 'assets/gallery/photo9.jpeg'
+    },
+
+    {
+      image: 'assets/gallery/photo10.jpeg'
+    },
+
+    {
+      image: 'assets/gallery/photo11.jpeg'
+    },
+
+    {
+      image: 'assets/gallery/photo12.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo13.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo14.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo15.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo16.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo17.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo18.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo19.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo20.jpeg'
+    },
+    {
+      image: 'assets/gallery/photo21.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo22.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo23.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo24.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo25.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo26.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo27.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo28.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo29.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo30.jpeg'    
+    },
+    {
+      image: 'assets/gallery/photo31.jpeg'    
+    }
+    
 
   ];
 
