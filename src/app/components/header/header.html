@@ -4,13 +4,15 @@
     <img src="assets/logo.jpeg" alt="logo">
   </div>
 
-  <div class="title-section">
-    <h1>Col D S Raju Polytechnic College</h1>
-    <p>Excellence in Technical Education</p>
-  </div>
+ <div class="title-section">
+  <h1>Col D S Raju Polytechnic College</h1>
 
+  <p>Excellence in Technical Education</p>
+</div>
   <!-- HAMBURGER -->
-
+ <div class="polycet-code">
+    POLYCET CODE : DSRP
+  </div>
 <div class="hamburger" (click)="toggleMobileMenu()">
   ☰
 </div>
@@ -18,22 +20,21 @@
 <!-- NAVBAR -->
 
 <nav class="nav-links" [class.mobile-open]="mobileMenuOpen">
+  
 
-  <a routerLink="/">Home</a>
+  <a (click)="scrollToSection('home')">Home</a>
 
-  <a routerLink="/about">About</a>
+  <a (click)="scrollToSection('about')">About</a>
 
   <a (click)="openDepartments()">Departments</a>
 
-  <a routerLink="/admissions">Admissions</a>
+  <a (click)="scrollToSection('alumni')">Alumni</a>
 
   <a (click)="openPlacements()">Placements</a>
 
-  <a routerLink="/alumni">Alumni</a>
+  <a (click)="scrollToSection('gallery')">Gallery</a>
 
-  <a routerLink="/gallery">Gallery</a>
-
-  <a routerLink="/footer">Contact</a>
+  <a (click)="scrollToSection('contact')">Contact</a>
 
 </nav>
 
@@ -54,33 +55,35 @@
     <div class="department-grid">
 
       <div class="department-card">
-        <h3>Computer Engineering</h3>
-        <p>Programming, AI, Web Development & Modern Technologies.</p>
+        <div class="dept-icon computer">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Diploma in Computer Engineering</h3>
+        
       </div>
 
       <div class="department-card">
-        <h3>Mechanical Engineering</h3>
-        <p>Advanced manufacturing, machines & industrial training.</p>
+        <div class="dept-icon mechanical">
+          <i class="fas fa-gears"></i>
+        </div>
+        <h3>Diploma in Mechanical Engineering</h3>
+        
       </div>
 
       <div class="department-card">
-        <h3>Civil Engineering</h3>
-        <p>Construction, structural design & surveying labs.</p>
+        <div class="dept-icon electrical">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3>Diploma in Electrical Engineering</h3>
+        
       </div>
 
       <div class="department-card">
-        <h3>Electrical Engineering</h3>
-        <p>Power systems, circuits & electrical machines.</p>
-      </div>
-
-      <div class="department-card">
-        <h3>ECE</h3>
-        <p>Electronics, communication systems & embedded technology.</p>
-      </div>
-
-      <div class="department-card">
-        <h3>AI & ML</h3>
-        <p>Artificial Intelligence, Machine Learning & Data Science.</p>
+        <div class="dept-icon ece">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <h3>Diploma in Electronics & Communication</h3>
+        
       </div>
 
     </div>

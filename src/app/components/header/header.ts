@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrls: ['./header.css']
 })
@@ -14,7 +13,7 @@ export class Header {
   showDepartments = false;
   showPlacements = false;
   mobileMenuOpen = false;
-  
+
   openDepartments() {
     this.showDepartments = true;
   }
@@ -30,9 +29,22 @@ export class Header {
   closePlacements() {
     this.showPlacements = false;
   }
+
   toggleMobileMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }
 
+  scrollToSection(sectionId: string) {
 
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    this.mobileMenuOpen = false;
+  }
 }

@@ -208,3 +208,50 @@
   }
 
 }
+.social-icons{
+  display:flex;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.social-icons a{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#ffffff20;
+  color:white;
+  font-size:24px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.social-icons a:hover{
+  transform:translateY(-5px);
+  background:#ffd700;
+  color:#08285c;
+}
+
+.contact-info{
+  margin-top:10px;
+  font-size:15px;
+  color:white;
+}
+
+.contact-info i{
+  color:#ffd700;
+  margin-right:8px;
+}
+.footer-box p{
+  margin:10px 0;
+  color:#fff;
+  font-size:15px;
+}
+
+.footer-box p i{
+  color:#FFD700;
+  margin-right:10px;
+  width:20px;
+}
